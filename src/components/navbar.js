@@ -1,32 +1,39 @@
 import React from 'react';
-import { AppBar, Button, Grid, Toolbar, Typography} from '@material-ui/core';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import styled from 'styled-components';
 
-const navbar = () => {
+const Styles = styled.div`
+    .navbar{
+        background-color: palevioletred;
+    }
+    .navbar-brand, .navbar-nav, .nav-link .nav-item{
+        color: white;
+        &:hover{
+            color: black;
+        }
+    }
+`;
+
+
+const NavBar = () =>{
     return(
-        <React.Fragment>
-            <AppBar position="fixed" style={{background: 'transparent', boxShadow: 'none'}}>
-                <Toolbar>
-                    <Typography variant="title" color="primary">BCJR</Typography>
-                    <Grid container alignItems="flex-start" justify="flex-end" direction="row">
-                        <Grid item lg = {1}> 
-                            <Button color="primary">About Me</Button>
-                        </Grid>
-                        <Grid item lg = {1}> 
-                            <Button color="primary">Projects</Button>
-                        </Grid>
-                        <Grid item lg = {1}> 
-                            <Button color="primary">Skills</Button>
-                        </Grid>
-                        <Grid item lg = {1}> 
-                            <Button color="primary">Experience</Button>
-                        </Grid>
-                    </Grid>
-                </Toolbar>
-            </AppBar>
-        </React.Fragment>
+        <Styles>
+            <Navbar expand="lg">
+                <Navbar.Brand href="/">BCJR</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ml-auto">
+                        <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/skills">Skills</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/experience">Experience</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/contact">Contact</Nav.Link></Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        </Styles>
     );
 }
 
-export default navbar;
-
-
+export default NavBar;
