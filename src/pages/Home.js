@@ -18,7 +18,7 @@ const Description = styled.h5`
     text-align: center;
 `;
 
-const ButtonBar = styled.div`
+const ButtonBar = styled(Container)`
     margin: auto;
     width: 50%;
 `;
