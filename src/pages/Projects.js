@@ -9,7 +9,6 @@ import ListGroupItem from 'react-bootstrap/ListGroupItem';
 import Button from 'react-bootstrap/Button';
 
 const Title = styled.h1`
-    color: palevioletred;
     font-size: 30px;
     padding-top: 5%;
     text-align: center;
@@ -45,7 +44,7 @@ const Projects = () =>{
                                 <ListGroupItem> Styled the website using <strong>Styled-Components, CSS3, HTML5, and React-Bootstrap </strong> and used <strong>GitHub</strong> as version control</ListGroupItem>
                                 <ListGroupItem> Used <strong>React-Router</strong> to handle page routing in ReactJS</ListGroupItem>
                             </ListGroup>
-                            <Button href="https://github.com/bcjr1997/portfolio-website">
+                            <Button href="https://github.com/bcjr1997/portfolio-website" target="_blank">
                                 GitHub Link
                             </Button>
                         </CustomCard>
@@ -79,7 +78,7 @@ const Projects = () =>{
                                 <ListGroupItem> Programmed the front-end of the Web application using <strong>AngularJS and Bootstrap 4</strong></ListGroupItem>
                                 <ListGroupItem> Programmed the back-end of the Web application using <strong>MongoDB</strong> for storage</ListGroupItem>
                             </ListGroup>
-                            <Button href="https://github.com/bcjr1997/DopplerTwitter">
+                            <Button href="https://github.com/bcjr1997/DopplerTwitter" target="_blank">
                                 GitHub Link
                             </Button>
                         </CustomCard>
@@ -101,7 +100,7 @@ const Projects = () =>{
                                 <ListGroupItem> Programmed the front-end of the Web application using <strong>CSS3 and Bootstrap 4</strong></ListGroupItem>
                                 <ListGroupItem> Programmed the back-end of the Web application using <strong>MySQL</strong> for storage</ListGroupItem>
                             </ListGroup>
-                            <Button href="https://github.com/bcjr1997/ConcertWebAppUsingAJAX">
+                            <Button href="https://github.com/bcjr1997/ConcertWebAppUsingAJAX" target="_blank">
                                 GitHub Link
                             </Button>
                         </CustomCard>

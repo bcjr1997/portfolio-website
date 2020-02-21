@@ -5,15 +5,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {FaLinkedinIn, FaGithubAlt} from 'react-icons/fa';
 import {TiDocumentText} from 'react-icons/ti';
+import Resume from '../assets/JunRongBrianChong.pdf';
+import Transcript from '../assets/Transcript.pdf';
 
 const Title = styled.h1`
-    color: palevioletred;
     font-size: 96px;
     text-align: center;
 `;
 
 const Description = styled.h5`
-    color: purple;
     font-size: 32px;
     text-align: center;
 `;
@@ -31,7 +31,6 @@ const HomePageContainer = styled(Container)`
 `;
 
 const StyledButton = styled.button`
-    color: palevioletred;
     font-size: 1em;
     margin: 1.0em;
     padding: 0.25em 1em;
@@ -51,24 +50,32 @@ const Home = () =>{
                     <ButtonBar>
                         <Row>
                             <Col md={3}>
-                                <StyledButton>
-                                    <FaGithubAlt/>
-                                </StyledButton>
+                                <a rel="noopener noreferrer" href="https://www.github.com/bcjr1997" target="_blank">
+                                    <StyledButton>
+                                        <FaGithubAlt/>
+                                    </StyledButton>
+                                </a>
                             </Col>
                             <Col md={3}>
-                                <StyledButton>
-                                    <FaLinkedinIn/>
-                                </StyledButton>
+                                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/bcjr1997/" target="_blank">
+                                    <StyledButton>
+                                        <FaLinkedinIn/>
+                                    </StyledButton>
+                                </a>
                             </Col>
                             <Col md={3}>
-                                <StyledButton>
-                                    <TiDocumentText/>
-                                </StyledButton>
+                                <a rel="noopener noreferrer" href={Resume} target="_blank">
+                                    <StyledButton>
+                                        <TiDocumentText/>
+                                    </StyledButton>
+                                </a>
                             </Col>
                             <Col md={3}>
-                                <StyledButton>
-                                    <TiDocumentText/>
-                                </StyledButton>
+                                <a rel="noopener noreferrer" href={Transcript} target="_blank">
+                                    <StyledButton>
+                                        <TiDocumentText/>
+                                    </StyledButton>
+                                </a>
                             </Col>
                         </Row>
                     </ButtonBar>

@@ -6,13 +6,11 @@ import Col from 'react-bootstrap/Col';
 import {AiTwotoneMail} from 'react-icons/ai';
 
 const Description = styled.h5`
-    color: palevioletred;
     font-size: 50px;
     text-align: center;
 `;
 
 const MailIcon = styled(AiTwotoneMail)`
-    color: palevioletred;
     font-size: 200px;
     text-align: center;
 `;

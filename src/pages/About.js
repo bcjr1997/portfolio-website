@@ -5,23 +5,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const AboutTitle = styled.h4`
-    color: palevioletred;
     font-size: 50px;
     text-align: left;
 `;
 
-const LeftCol = styled(Col)`
-    border-style : solid;
-    border-color : pink;
-`;
-
-const RightCol = styled(Col)`
-    border-style : dotted;
-    border-color : pink;
-`;
-
 const ListItem = styled.li`
-    color: purple;
     font-size: 18px;
 `;
 
@@ -37,10 +25,10 @@ const About = () =>{
         <React.Fragment>
             <AboutContainer>
                 <Row>
-                    <LeftCol md = {4}>
+                    <Col md = {4}>
                         <AboutTitle> About Me</AboutTitle>
-                    </LeftCol>
-                    <RightCol md ={{span: 7, offset: 1}}>
+                    </Col>
+                    <Col md ={{span: 7, offset: 1}}>
                         <ul>
                             <ListItem>
                                 Received my Bachelors of Science in Computer Science at the University of Nebraska - Lincoln on December 2019.
@@ -53,7 +41,7 @@ const About = () =>{
                                 Interested in Software Engineering, Artificial Intelligence, and anything that is challenging in the Computer Science field.
                             </ListItem>
                         </ul>
-                    </RightCol>
+                    </Col>
                 </Row>
             </AboutContainer>
         </React.Fragment>

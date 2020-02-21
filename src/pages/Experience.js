@@ -19,7 +19,6 @@ const CustomCard = styled(Card)`
 `;
 
 const Title = styled.h1`
-    color: palevioletred;
     font-size: 96px;
     text-align: center;
     padding-top: 2%;

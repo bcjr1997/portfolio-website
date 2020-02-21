@@ -5,13 +5,10 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
     .navbar{
-        background-color: palevioletred;
+        background-color: transparent;
     }
-    .navbar-brand, .navbar-nav, .nav-link .nav-item{
+    .navbar-brand .navbar-nav .nav-link .nav-item{
         color: white;
-        &:hover{
-            color: black;
-        }
     }
 `;
 
