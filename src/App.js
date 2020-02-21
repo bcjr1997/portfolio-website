@@ -6,7 +6,7 @@ import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 import Layout from './components/Layout';
 import Navbar from './components/Navbar';
-import Skills from './pages/Skills';
+import Projects from './pages/Projects';
 import About from './pages/About';
 
 function app(){
@@ -19,7 +19,7 @@ function app(){
                         <Route exact path ="/" component={Home}></Route>
                         <Route path ="/experience" component={Experience}></Route>
                         <Route path ="/contact" component={Contact}></Route>
-                        <Route path ="/skills" component={Skills}></Route>
+                        <Route path ="/projects" component={Projects}></Route>
                         <Route path ="/about" component={About}></Route>
                         <Route component={NoMatch}/>
                     </Switch>
