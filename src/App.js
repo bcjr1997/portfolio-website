@@ -16,11 +16,11 @@ function app(){
             <Layout>
                 <Router>
                     <Switch>
-                        <Route exact path ="/portfolio-website" component={Home}></Route>
-                        <Route path ="/portfolio-website/experience" component={Experience}></Route>
-                        <Route path ="/portfolio-website/contact" component={Contact}></Route>
-                        <Route path ="/portfolio-website/projects" component={Projects}></Route>
-                        <Route path ="/portfolio-website/about" component={About}></Route>
+                        <Route exact path ="/" component={Home}></Route>
+                        <Route path ="/experience" component={Experience}></Route>
+                        <Route path ="/contact" component={Contact}></Route>
+                        <Route path ="/projects" component={Projects}></Route>
+                        <Route path ="/about" component={About}></Route>
                         <Route component={NoMatch}/>
                     </Switch>
                 </Router>
