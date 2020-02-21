@@ -1,5 +1,5 @@
 {
-  "homepage": "http://bcjr1997.github.io/portfolio-website",
+  "homepage": "http://bcjr1997.github.io/",
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "bootstrap-styled": "^2.7.2",
+    "core-js": "^3.6.4",
     "devicon-react-svg": "^0.2.2",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
