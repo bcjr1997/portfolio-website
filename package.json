@@ -1,5 +1,5 @@
 {
-  "homepage": "http://bcjr1997.github.io/",
+  "homepage": "http://www.bcjr1997.com/",
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -33,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "aws s3 sync build/ s3://bcjr1997bucket --acl public-read"
   },
   "eslintConfig": {
     "extends": "react-app"
